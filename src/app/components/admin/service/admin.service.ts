@@ -13,7 +13,7 @@ export class AdminService {
     return this.http.get<User[]>('https://jsonplaceholder.typicode.com/users?_start=0&_limit=5');
   }
 
-  getPersons(id: number) {
-    return this.http.get<User>(`https://jsonplaceholder.typicode.com/user/${id}`);
+  getPersonById(id: number) {
+    return this.http.get<User>(`https://jsonplaceholder.typicode.com/users/${id}`);
   }
 }
